@@ -79,8 +79,8 @@ WSGI_APPLICATION = 'tester.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        conn_max_age=600,
-        ssl_require=True
+        default='postgresql://postgres:yHJEVEXOcDohKEXdOkw7ZFCHTPyH7UPj@localhost:5432/postgres',
+        conn_max_age=600
     )
 }
 
