@@ -79,7 +79,6 @@ WSGI_APPLICATION = 'tester.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost:5432/hello',  # local fallback
         conn_max_age=600,
         ssl_require=True
     )
