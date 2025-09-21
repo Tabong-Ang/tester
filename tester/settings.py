@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'tester.wsgi.application'
 
 
 DATABASES = {
+    'ENGINE': 'django.db.backends.postgresql',
     'default': dj_database_url.config(
         conn_max_age=600,
         ssl_require=True
