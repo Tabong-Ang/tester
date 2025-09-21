@@ -78,14 +78,11 @@ WSGI_APPLICATION = 'tester.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres_f1h6_user',
-        'PASSWORD': 'yHJEVEXOcDohKEXdOkw7ZFCHTPyH7UPj',
-        'HOST': 'dpg-d382b4vfte5s73bnqhu0-a',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgresql://postgres:Abibiwilson12s@localhost:5432/postgres',
+        conn_max_age=600
+    )
 }
 
 
